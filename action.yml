@@ -10,10 +10,10 @@ inputs:
     default: 0
 outputs:
   result:
-  description: 'output of the sum of the 2 numbers'
+   description: output of the sum of the 2 numbers
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  arg:
+  args:
     - ${{ inputs.number1 }}
     - ${{ inputs.number2 }}
